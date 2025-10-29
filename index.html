@@ -106,7 +106,7 @@
         const data = await res.json();
 
         if (data.success) {
-          responseDiv.innerText = data.message + "\nOnce payment is successful, your Airtime Float will be updated automatically.";
+          responseDiv.innerText = data.message; // Removed the extra success message
         } else {
           responseDiv.innerText = "Error: " + data.message;
         }
